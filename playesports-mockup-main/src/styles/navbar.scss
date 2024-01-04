@@ -1,0 +1,47 @@
+.navbar-component {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 4.5rem;
+	transition: background .2s linear;
+
+	&.scrolled {
+		background: #000;
+	}
+
+	.wrapper {
+		height: 100%;
+		display: flex;
+		align-items: center;
+
+		.logo img {
+			display: block;
+		}
+
+		.link {
+			margin-left: 2rem;
+			font-size: 1rem;
+			font-weight: bold;
+			text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 4px;
+		}
+
+		.logo + .link {
+			margin-left: 6rem;
+		}
+
+		.spacer {
+			flex: 1;
+		}
+
+		.button {
+			font-weight: bold;
+		}
+	}
+
+	@media screen and (max-width: 800px) {
+		.link {
+			display: none;
+		}
+	}
+}

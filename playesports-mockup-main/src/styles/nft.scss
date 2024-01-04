@@ -1,0 +1,82 @@
+.nft-component {
+	margin-top: 6em;
+
+	.header, .attributes {
+		background: #222;
+		border-radius: 1rem;
+	}
+
+	.header {
+		display: flex;
+
+		.image {
+
+			img {
+				display: block;
+				border-radius: 1rem;
+			}
+		}
+
+		.about {
+			flex: 1;
+			padding: 1.5rem 2.5rem;
+
+			.name {
+				font-size: 2rem;
+				font-weight: bold;
+				text-align: center;
+			}
+
+			.description {
+				margin-top: 2rem;
+				font-size: 1rem;
+			}
+
+			.price {
+				margin-top: 1.5rem;
+
+				.label {
+					opacity: .8;
+				}
+
+				.value {
+					margin-top: .125rem;
+					font-size: 1.5rem;
+					font-weight: bold;
+				}
+			}
+
+			.buttons {
+				margin-top: 2rem;
+
+				.button {
+					margin-top: 1rem;
+					justify-content: center;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	.attributes {
+		margin-top: 2rem;
+		padding: 1rem 0;
+		display: flex;
+		flex-wrap: wrap;
+
+		.attribute {
+			width: calc(100% / 3);
+			padding: 1.5rem 2.5rem;
+
+			.name {
+				font-size: 1.5rem;
+				font-weight: bold;
+			}
+
+			.value {
+				margin-top: .25rem;
+				opacity: .8;
+			}
+		}
+	}
+}

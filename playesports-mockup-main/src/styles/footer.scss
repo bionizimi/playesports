@@ -1,0 +1,44 @@
+.footer-component {
+	margin-top: 4rem;
+	background: #222;
+
+	.wrapper {
+		display: flex;
+
+
+	}
+
+	.column {
+		padding: 3rem;
+
+		&:first-child {
+			flex: 1;
+		}
+	}
+
+	.logo {
+		filter: brightness(0) invert(1);
+	}
+
+	.socials {
+		margin-top: 1rem;
+		font-size: 1.125rem;
+
+		svg + svg {
+			margin-left: .75rem;
+		}
+	}
+
+	.links {
+		display: flex;
+		flex-direction: column;
+		grid-gap: 2rem;
+		font-weight: bold;
+	}
+
+	@media screen and (max-width: 800px) {
+		.wrapper {
+			display: none;
+		}
+	}
+}
